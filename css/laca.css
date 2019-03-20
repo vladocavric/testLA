@@ -1,20 +1,16 @@
-/* line 3, laca.scss */
-body {
-  font-family: "Poppins"; }
-
-/* line 7, laca.scss */
 nav {
   background-color: #f57a30;
   font-weight: 400;
   display: flex;
   height: 64px;
-  align-items: center; }
-  /* line 14, laca.scss */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   nav div {
     flex-grow: 4;
     display: flex;
     justify-content: flex-end; }
-    /* line 19, laca.scss */
     nav div button.log-in-btn {
       height: 39px;
       background-color: #231f20;
@@ -26,27 +22,29 @@ nav {
       border: 0;
       width: 118px;
       border-radius: 50px; }
-      /* line 31, laca.scss */
       nav div button.log-in-btn:hover {
         background-color: #f8b185; }
-    /* line 38, laca.scss */
     nav div button.search-btn {
       color: #fffaf0;
       border: 0;
       background-color: transparent;
       margin: 0 37px 0 20px; }
-  /* line 45, laca.scss */
   nav ul {
     display: flex;
     padding: 0;
     margin: 0; }
-    /* line 50, laca.scss */
     nav ul li {
       list-style-type: none;
       color: white;
       padding: 20px; }
-      /* line 55, laca.scss */
       nav ul li:hover {
         background-color: #f8b185; }
+
+body {
+  font-family: "Poppins"; }
+
+.hero {
+  background-image: url(/accessories/3-layers.png);
+  height: 1440px; }
 
 /*# sourceMappingURL=laca.css.map */

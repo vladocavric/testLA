@@ -1,0 +1,11 @@
+@import '_colors';
+@import '_navbar.scss';
+
+body{
+    font-family: "Poppins";
+}
+
+.hero{
+    background-image: url(/accessories/3-layers.png);
+    height: 1440px;
+}
