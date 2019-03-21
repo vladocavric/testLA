@@ -66,6 +66,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100px;
-  background-color: #fff1cf; }
+  box-shadow: 3px 4px 7px rgba(1, 1, 1, 0.09);
+  background-color: #fff1cf;
+  opacity: 0.85;
+  z-index: 1;
+  text-align: center; }
+  /* line 28, ../sass/laca.scss */
+  .logo-over-slider img {
+    opacity: 1;
+    z-index: 2; }
 
 /*# sourceMappingURL=laca.css.map */
