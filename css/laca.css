@@ -1,3 +1,4 @@
+/* line 1, ../sass/_navbar.scss */
 nav {
   background-color: #f57a30;
   font-weight: 400;
@@ -6,11 +7,14 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
+  /* line 12, ../sass/_navbar.scss */
   nav div {
     flex-grow: 4;
     display: flex;
     justify-content: flex-end; }
+    /* line 17, ../sass/_navbar.scss */
     nav div button.log-in-btn {
       height: 39px;
       background-color: #231f20;
@@ -22,29 +26,46 @@ nav {
       border: 0;
       width: 118px;
       border-radius: 50px; }
+      /* line 29, ../sass/_navbar.scss */
       nav div button.log-in-btn:hover {
         background-color: #f8b185; }
+    /* line 36, ../sass/_navbar.scss */
     nav div button.search-btn {
       color: #fffaf0;
       border: 0;
       background-color: transparent;
       margin: 0 37px 0 20px; }
+  /* line 43, ../sass/_navbar.scss */
   nav ul {
     display: flex;
     padding: 0;
     margin: 0; }
+    /* line 48, ../sass/_navbar.scss */
     nav ul li {
       list-style-type: none;
       color: white;
       padding: 20px; }
+      /* line 53, ../sass/_navbar.scss */
       nav ul li:hover {
         background-color: #f8b185; }
 
+/* line 4, ../sass/laca.scss */
 body {
   font-family: "Poppins"; }
 
-.hero {
-  background-image: url(/accessories/3-layers.png);
-  height: 1440px; }
+/* line 10, ../sass/laca.scss */
+.carousel {
+  margin-top: 64px; }
+
+/* line 14, ../sass/laca.scss */
+.carousel-item img {
+  height: 700px; }
+
+/* line 18, ../sass/laca.scss */
+.logo-over-slider {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: #fff1cf; }
 
 /*# sourceMappingURL=laca.css.map */
