@@ -7,6 +7,29 @@ body {
     font-family: "Poppins";
 }
 
+.weclocme-section{
+    background-image: url(/accessories/jordan-arnold-612264-unsplash.png);
+    background-color: rgba($laca-yelow, 0.7);
+    height: 650px;
+    
+    .welcome-content{
+        padding: 55px;
+        text-align: center;
+        width: 720px;
+
+        h1{
+            font-weight: 600;
+            font-size: 30px;
+            
+            
+        }
+        .border-welcome{
+            width: 60px;
+            border-bottom: 2px solid $laca-orange;
+            margin: 20px auto;
+        }
+    }
+}
 
 
 

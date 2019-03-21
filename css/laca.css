@@ -7,7 +7,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 3; }
   nav div {
     flex-grow: 4;
     display: flex;
@@ -56,9 +56,13 @@ nav {
   background-color: rgba(255, 241, 207, 0.85);
   z-index: 1;
   text-align: center; }
+  .logo-over-slider img {
+    min-width: 320px;
+    object-fit: cover; }
 
 .carousel-control {
   display: flex;
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
   justify-content: center;
@@ -84,5 +88,21 @@ nav {
 
 body {
   font-family: "Poppins"; }
+
+.weclocme-section {
+  background-image: url(/accessories/jordan-arnold-612264-unsplash.png);
+  background-color: rgba(255, 241, 207, 0.7);
+  height: 650px; }
+  .weclocme-section .welcome-content {
+    padding: 55px;
+    text-align: center;
+    width: 720px; }
+    .weclocme-section .welcome-content h1 {
+      font-weight: 600;
+      font-size: 30px; }
+    .weclocme-section .welcome-content .border-welcome {
+      width: 60px;
+      border-bottom: 2px solid #f57a30;
+      margin: 20px auto; }
 
 /*# sourceMappingURL=laca.css.map */
