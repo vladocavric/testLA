@@ -1,27 +1,12 @@
 @import '_colors';
 @import '_navbar.scss';
+@import '_slider';
 
-body{
+body {
+
     font-family: "Poppins";
 }
 
 
 
-.carousel{
-    margin-top: 64px;
-}
 
-.carousel-item img {
-    height: 700px;
-    object-fit: cover;
-}
-
-.logo-over-slider{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.09);
-    background-color: rgba(#fff1cf, 0.85);
-    z-index: 1;
-    text-align: center;
-}
