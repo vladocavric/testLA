@@ -27,10 +27,8 @@ nav{
             border-radius: 50px;
             
             &:hover{
-
                 background-color: $laca-orange-hover
             } 
-
         }
 
         button.search-btn{
@@ -40,6 +38,7 @@ nav{
             margin: 0 37px 0 20px;
         }
     }
+
     ul{
         display: flex;
         // justify-content: center;
@@ -52,10 +51,7 @@ nav{
 
          &:hover{
                 background-color: $laca-orange-hover 
-            }
-            
-        }
-        
-    }
-        
+            }   
+        }   
+    }     
 } 
