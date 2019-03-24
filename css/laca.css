@@ -1,3 +1,4 @@
+/* line 1, ../sass/_navbar.scss */
 nav {
   background-color: #f57a30;
   font-weight: 400;
@@ -7,11 +8,13 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3; }
+  z-index: 1000; }
+  /* line 12, ../sass/_navbar.scss */
   nav div {
     flex-grow: 4;
     display: flex;
     justify-content: flex-end; }
+    /* line 17, ../sass/_navbar.scss */
     nav div button.log-in-btn {
       height: 39px;
       background-color: #231f20;
@@ -23,31 +26,43 @@ nav {
       border: 0;
       width: 118px;
       border-radius: 50px; }
+      /* line 29, ../sass/_navbar.scss */
       nav div button.log-in-btn:hover {
         background-color: #f8b185; }
+    /* line 34, ../sass/_navbar.scss */
     nav div button.search-btn {
       color: #fffaf0;
       border: 0;
       background-color: transparent;
       margin: 0 37px 0 20px; }
+  /* line 42, ../sass/_navbar.scss */
   nav ul {
     display: flex;
     padding: 0;
     margin: 0; }
+    /* line 47, ../sass/_navbar.scss */
     nav ul li {
       list-style-type: none;
       color: white;
       padding: 20px; }
+      /* line 52, ../sass/_navbar.scss */
       nav ul li:hover {
         background-color: #f8b185; }
 
+/* line 59, ../sass/_navbar.scss */
+.carousel-caption {
+  margin-bottom: 140px; }
+
+/* line 1, ../sass/_slider.scss */
 .carousel {
   margin-top: 64px; }
 
+/* line 5, ../sass/_slider.scss */
 .carousel-item img {
   height: 700px;
   object-fit: cover; }
 
+/* line 10, ../sass/_slider.scss */
 .logo-over-slider {
   position: absolute;
   width: 100%;
@@ -56,10 +71,8 @@ nav {
   background-color: rgba(255, 241, 207, 0.85);
   z-index: 1;
   text-align: center; }
-  .logo-over-slider img {
-    min-width: 320px;
-    object-fit: cover; }
 
+/* line 20, ../sass/_slider.scss */
 .carousel-control {
   display: flex;
   flex-shrink: 0;
@@ -74,35 +87,147 @@ nav {
   -ms-border-radius: 50%;
   -o-border-radius: 50%; }
 
+/* line 37, ../sass/_slider.scss */
 .carousel-control-next-icon, .carousel-control-prev-icon {
   height: 60px; }
 
+/* line 43, ../sass/_slider.scss */
 .carousel-indicators li {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%; }
 
-body {
-  font-family: "Poppins"; }
+/* line 56, ../sass/_slider.scss */
+.carousel-caption p {
+  margin-bottom: 35px; }
 
+/* line 1, ../sass/_btn.scss */
+.btn-orange {
+  color: #fffeff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  /*Stylefor"Rounded Re"*/
+  padding: 19px 49px;
+  background-color: #f57a30;
+  border: 0;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px; }
+  /* line 20, ../sass/_btn.scss */
+  .btn-orange:hover {
+    background-color: #f8b185; }
+
+/* line 25, ../sass/_btn.scss */
+.btn-orange-sm {
+  color: #fffeff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  /*Stylefor"Rounded Re"*/
+  padding: 12px 31px;
+  background-color: #f57a30;
+  border: 0;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px; }
+  /* line 44, ../sass/_btn.scss */
+  .btn-orange-sm:hover {
+    background-color: #f8b185; }
+
+/* line 3, ../sass/_social.scss */
+div.row div {
+  margin: 17px;
+  border-radius: 5px;
+  border: 1px solid rgba(245, 122, 48, 0.33);
+  background-color: #fffeff;
+  padding: 0; }
+  /* line 10, ../sass/_social.scss */
+  div.row div h4 {
+    color: #fffeff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    background-color: #84425d;
+    padding: 22px;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0; }
+  /* line 25, ../sass/_social.scss */
+  div.row div button {
+    margin-bottom: 35px; }
+
+/* line 31, ../sass/_social.scss */
+.instagram .insta-photos {
+  border: 0; }
+  /* line 34, ../sass/_social.scss */
+  .instagram .insta-photos img {
+    max-width: 170px;
+    height: auto;
+    border: 0;
+    margin: 10px;
+    padding: 0; }
+
+/* line 43, ../sass/_social.scss */
+.social-media {
+  max-width: 99%;
+  margin: 110px 0; }
+
+/* line 7, ../sass/laca.scss */
+body {
+  font-family: "Poppins";
+  background-color: #fffeff; }
+
+/* line 12, ../sass/laca.scss */
+a:hover {
+  color: white !important;
+  text-decoration: none !important; }
+
+/* line 17, ../sass/laca.scss */
 .weclocme-section {
   background-image: url(/accessories/jordan-arnold-612264-unsplash.png);
   background-color: rgba(255, 241, 207, 0.7);
   height: 650px; }
+  /* line 22, ../sass/laca.scss */
   .weclocme-section .welcome-content {
     padding: 55px;
     text-align: center;
     width: 720px; }
+    /* line 27, ../sass/laca.scss */
     .weclocme-section .welcome-content h1 {
       font-weight: 600;
       font-size: 30px; }
+    /* line 31, ../sass/laca.scss */
     .weclocme-section .welcome-content .border-welcome {
       width: 60px;
       border-bottom: 2px solid #f57a30;
       margin: 20px auto; }
+
+/* line 41, ../sass/laca.scss */
+.featured-partner {
+  background-image: url(/accessories/jordan-arnold-612264-unsplash_copy_4.png);
+  background-color: #84425d;
+  color: white; }
+  /* line 46, ../sass/laca.scss */
+  .featured-partner h2 {
+    margin-top: 100px;
+    margin-bottom: 35px; }
 
 /*# sourceMappingURL=laca.css.map */

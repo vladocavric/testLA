@@ -1,10 +1,17 @@
-@import '_colors';
-@import '_navbar.scss';
-@import '_slider';
+@import 'colors.scss';
+@import 'navbar.scss';
+@import 'slider.scss';
+@import 'btn.scss' ;
+@import 'social.scss';
 
 body {
-
     font-family: "Poppins";
+    background-color: $background;
+}
+
+a:hover{
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .weclocme-section{
@@ -27,7 +34,18 @@ body {
             margin: 20px auto;
         }
     }
+    
+    
 }
 
+.featured-partner{
+    background-image: url(/accessories/jordan-arnold-612264-unsplash_copy_4.png);
+    background-color: $laca-purple;
+    color: white;
 
+    h2{
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+}
 
