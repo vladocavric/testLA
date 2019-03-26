@@ -1,3 +1,28 @@
+/* line 2, ../sass/_general.scss */
+body {
+  font-family: "Poppins";
+  background-color: #fffeff; }
+
+/* line 7, ../sass/_general.scss */
+a:hover {
+  color: white !important;
+  text-decoration: none !important; }
+
+/* line 12, ../sass/_general.scss */
+h2 {
+  font-size: 36px !important;
+  display: block !important;
+  font-weight: 400 !important; }
+  @media screen and (max-width: 992px) {
+    /* line 12, ../sass/_general.scss */
+    h2 {
+      font-size: 30px !important; } }
+
+@media screen and (min-width: 1140px) {
+  /* line 22, ../sass/_general.scss */
+  .container-fluid {
+    max-width: 1400px; } }
+
 /* line 1, ../sass/_navbar.scss */
 nav {
   background-color: #f57a30;
@@ -187,47 +212,96 @@ div.row div {
 
 /* line 43, ../sass/_social.scss */
 .social-media {
-  max-width: 99%;
   margin: 110px 0; }
+  /* line 47, ../sass/_social.scss */
+  .social-media .container {
+    max-width: none; }
 
-/* line 7, ../sass/laca.scss */
-body {
-  font-family: "Poppins";
-  background-color: #fffeff; }
-
-/* line 12, ../sass/laca.scss */
-a:hover {
-  color: white !important;
-  text-decoration: none !important; }
-
-/* line 17, ../sass/laca.scss */
+/* line 1, ../sass/_welcome.scss */
 .weclocme-section {
   background-image: url(/accessories/jordan-arnold-612264-unsplash.png);
   background-color: rgba(255, 241, 207, 0.7);
   height: 650px; }
-  /* line 22, ../sass/laca.scss */
+  /* line 6, ../sass/_welcome.scss */
   .weclocme-section .welcome-content {
     padding: 55px;
     text-align: center;
     width: 720px; }
-    /* line 27, ../sass/laca.scss */
+    /* line 11, ../sass/_welcome.scss */
     .weclocme-section .welcome-content h1 {
       font-weight: 600;
       font-size: 30px; }
-    /* line 31, ../sass/laca.scss */
+    /* line 15, ../sass/_welcome.scss */
     .weclocme-section .welcome-content .border-welcome {
       width: 60px;
       border-bottom: 2px solid #f57a30;
       margin: 20px auto; }
 
-/* line 41, ../sass/laca.scss */
+/* line 1, ../sass/_partner.scss */
 .featured-partner {
   background-image: url(/accessories/jordan-arnold-612264-unsplash_copy_4.png);
   background-color: #84425d;
-  color: white; }
-  /* line 46, ../sass/laca.scss */
+  color: white;
+  background-repeat: no-repeat; }
+  /* line 10, ../sass/_partner.scss */
   .featured-partner h2 {
-    margin-top: 100px;
-    margin-bottom: 35px; }
+    padding: 100px 0 35px 0;
+    margin-bottom: 0; }
+    @media screen and (max-width: 992px) {
+      /* line 10, ../sass/_partner.scss */
+      .featured-partner h2 {
+        padding: 50px 0 20px 0; } }
+  /* line 19, ../sass/_partner.scss */
+  .featured-partner img {
+    padding: 0 0 115px 0;
+    height: auto;
+    object-fit: cover; }
+    @media screen and (max-width: 992px) {
+      /* line 19, ../sass/_partner.scss */
+      .featured-partner img {
+        width: 80%;
+        padding: 0 0 50px 0; } }
+
+/* line 1, ../sass/_events.scss */
+.day {
+  color: #fecf61;
+  font-size: 40px;
+  font-weight: 400; }
+
+/* line 7, ../sass/_events.scss */
+.month {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/* line 16, ../sass/_events.scss */
+div.upcoming-events .date {
+  background-color: #84425d;
+  padding: 20px;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  margin: 50px auto 30px; }
+/* line 26, ../sass/_events.scss */
+div.upcoming-events h3 {
+  color: #84425d;
+  font-size: 18px;
+  line-height: 30px;
+  height: 80px;
+  vertical-align: middle;
+  padding: 0 50px; }
+/* line 36, ../sass/_events.scss */
+div.upcoming-events .border-event {
+  width: 150px;
+  margin: 20px auto 25px; }
+/* line 41, ../sass/_events.scss */
+div.upcoming-events p {
+  color: #f57a30;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 45px;
+  height: 63px; }
 
 /*# sourceMappingURL=laca.css.map */

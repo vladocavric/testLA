@@ -41,7 +41,11 @@ div.row {
 } 
 
 .social-media {
-    max-width: 99%;
+    // max-width: 99%;
     margin: 110px 0;
+
+    .container {
+        max-width: none;
+    }
 
 }

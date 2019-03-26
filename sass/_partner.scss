@@ -1,0 +1,30 @@
+.featured-partner{
+    background-image: url(/accessories/jordan-arnold-612264-unsplash_copy_4.png);
+    background-color: $laca-purple;
+    color: white;
+    // background-size: cover;
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    
+
+    h2{
+        padding: 100px 0 35px 0;
+        margin-bottom: 0;
+        @media screen and (max-width: 992px){
+            padding: 50px 0 20px 0;
+            
+        }
+    }
+
+    img{
+        padding: 0 0 115px 0;
+        height: auto;
+        object-fit: cover;
+
+        @media screen and (max-width: 992px){
+            width: 80%;
+            padding: 0 0 50px 0;
+        }
+
+    }
+}

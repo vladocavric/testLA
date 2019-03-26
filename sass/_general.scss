@@ -1,0 +1,27 @@
+
+body{
+    font-family: "Poppins";
+    background-color: $background;
+}
+
+a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+h2{
+    font-size: 36px !important;
+    display: block !important;
+    font-weight: 400 !important;
+    @media screen and (max-width: 992px){
+        font-size: 30px !important;
+    }
+
+}
+
+.container-fluid{
+    @media screen and (min-width: 1140px){
+       max-width: 1400px;
+    //    background-color: red;
+    }
+}
