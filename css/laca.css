@@ -366,7 +366,7 @@ div.row .event-single-home {
     padding: 0; }
     /* line 10, ../sass/_ourservices.scss */
     .our-services .our-services-vraper .service {
-      margin: 0 0 0 0;
+      margin: 0;
       border-color: #e1e4ed;
       border-radius: 0;
       border: 0 1px 0 0; }
