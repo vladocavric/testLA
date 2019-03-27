@@ -2,6 +2,7 @@
     color: #fecf61;
     font-size: 40px;
     font-weight: 400;
+    font-variant-numeric: tabular-nums;
 }
 
 .month{
@@ -13,13 +14,19 @@
 
 div.upcoming-events{
 
+    div{
+        padding: 50px 45px;
+      
+    }
+
+ 
     .date{
         background-color: $laca-purple;
         padding: 20px;
         border-radius: 50%;
         height: 130px;
         width: 130px;
-        margin: 50px auto 30px;
+        margin: 0 auto 30px;
 
     }
 
@@ -28,13 +35,33 @@ div.upcoming-events{
         font-size: 18px;
         // font-weight: 400;
         line-height: 30px;
-        height: 80px;
+        height: 90px;
         vertical-align: middle;
         padding: 0 50px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 0;
+            height: auto;
+
+          }  
+        
+          @media screen and (min-width: 92px) {
+            padding: 0;
+            height: 150;
+
+          }  
+          @media screen and (max-width: 768px) {
+            padding: 0;
+            max-width: 300px;
+            margin: auto;
+            height: 150;
+
+          }
     }
 
     .border-event{
         width: 150px;
+        padding: 0;
         margin: 20px auto 25px;
     }
     
@@ -44,7 +71,45 @@ div.upcoming-events{
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
-        padding: 0 45px;
-        height: 63px;
+        height: 70px;
+        margin-bottom: 35px; 
+
+        @media screen and (max-width: 1200px) {
+            height: 120px;
+
+          }
+        
+        //   @media screen and (max-width: 92px) {
+        //     padding: 0;
+        //     height: 150;
+
+        //   }  
+        //   @media screen and (max-width: 768px) {
+        //     padding: 0;
+        //     // max-width: 300px;
+        //     margin: auto;
+        //     height: 150;
+
+        //   }
+    }
+}
+
+
+div.row{
+
+    .event-single-home{
+        background-color: rgba($laca-yelow, 1);
+        background-image: url(/accessories/2-layers.png);
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        // position: relative;
+        border: none;
+        // height: 100%;
+
+        a{
+            bottom: 15px;
+            
+        }
     }
 }

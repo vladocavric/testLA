@@ -1,25 +1,25 @@
-/* line 2, ../sass/_general.scss */
+/* line 4, ../sass/_general.scss */
 body {
   font-family: "Poppins";
   background-color: #fffeff; }
 
-/* line 7, ../sass/_general.scss */
+/* line 9, ../sass/_general.scss */
 a:hover {
   color: white !important;
   text-decoration: none !important; }
 
-/* line 12, ../sass/_general.scss */
+/* line 14, ../sass/_general.scss */
 h2 {
   font-size: 36px !important;
   display: block !important;
   font-weight: 400 !important; }
   @media screen and (max-width: 992px) {
-    /* line 12, ../sass/_general.scss */
+    /* line 14, ../sass/_general.scss */
     h2 {
       font-size: 30px !important; } }
 
 @media screen and (min-width: 1140px) {
-  /* line 22, ../sass/_general.scss */
+  /* line 24, ../sass/_general.scss */
   .container-fluid {
     max-width: 1400px; } }
 
@@ -30,16 +30,15 @@ nav {
   display: flex;
   height: 64px;
   align-items: center;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; }
-  /* line 12, ../sass/_navbar.scss */
+  /* line 11, ../sass/_navbar.scss */
   nav div {
     flex-grow: 4;
     display: flex;
     justify-content: flex-end; }
-    /* line 17, ../sass/_navbar.scss */
+    /* line 16, ../sass/_navbar.scss */
     nav div button.log-in-btn {
       height: 39px;
       background-color: #231f20;
@@ -51,43 +50,39 @@ nav {
       border: 0;
       width: 118px;
       border-radius: 50px; }
-      /* line 29, ../sass/_navbar.scss */
+      /* line 28, ../sass/_navbar.scss */
       nav div button.log-in-btn:hover {
         background-color: #f8b185; }
-    /* line 34, ../sass/_navbar.scss */
+    /* line 33, ../sass/_navbar.scss */
     nav div button.search-btn {
       color: #fffaf0;
       border: 0;
       background-color: transparent;
       margin: 0 37px 0 20px; }
-  /* line 42, ../sass/_navbar.scss */
+  /* line 41, ../sass/_navbar.scss */
   nav ul {
     display: flex;
     padding: 0;
     margin: 0; }
-    /* line 47, ../sass/_navbar.scss */
+    /* line 46, ../sass/_navbar.scss */
     nav ul li {
       list-style-type: none;
       color: white;
       padding: 20px; }
-      /* line 52, ../sass/_navbar.scss */
+      /* line 51, ../sass/_navbar.scss */
       nav ul li:hover {
         background-color: #f8b185; }
 
-/* line 59, ../sass/_navbar.scss */
+/* line 58, ../sass/_navbar.scss */
 .carousel-caption {
   margin-bottom: 140px; }
 
 /* line 1, ../sass/_slider.scss */
-.carousel {
-  margin-top: 64px; }
-
-/* line 5, ../sass/_slider.scss */
 .carousel-item img {
   height: 700px;
   object-fit: cover; }
 
-/* line 10, ../sass/_slider.scss */
+/* line 6, ../sass/_slider.scss */
 .logo-over-slider {
   position: absolute;
   width: 100%;
@@ -97,7 +92,7 @@ nav {
   z-index: 1;
   text-align: center; }
 
-/* line 20, ../sass/_slider.scss */
+/* line 16, ../sass/_slider.scss */
 .carousel-control {
   display: flex;
   flex-shrink: 0;
@@ -112,11 +107,11 @@ nav {
   -ms-border-radius: 50%;
   -o-border-radius: 50%; }
 
-/* line 37, ../sass/_slider.scss */
+/* line 33, ../sass/_slider.scss */
 .carousel-control-next-icon, .carousel-control-prev-icon {
   height: 60px; }
 
-/* line 43, ../sass/_slider.scss */
+/* line 39, ../sass/_slider.scss */
 .carousel-indicators li {
   width: 8px;
   height: 8px;
@@ -127,7 +122,7 @@ nav {
   -ms-border-radius: 50%;
   -o-border-radius: 50%; }
 
-/* line 56, ../sass/_slider.scss */
+/* line 52, ../sass/_slider.scss */
 .carousel-caption p {
   margin-bottom: 35px; }
 
@@ -172,6 +167,13 @@ nav {
   /* line 44, ../sass/_btn.scss */
   .btn-orange-sm:hover {
     background-color: #f8b185; }
+
+/* line 49, ../sass/_btn.scss */
+.btn-test {
+  color: white;
+  background: red;
+  padding: 12px;
+  border-radius: 5px; }
 
 /* line 3, ../sass/_social.scss */
 div.row div {
@@ -266,42 +268,80 @@ div.row div {
 .day {
   color: #fecf61;
   font-size: 40px;
-  font-weight: 400; }
+  font-weight: 400;
+  font-variant-numeric: tabular-nums; }
 
-/* line 7, ../sass/_events.scss */
+/* line 8, ../sass/_events.scss */
 .month {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase; }
 
-/* line 16, ../sass/_events.scss */
+/* line 17, ../sass/_events.scss */
+div.upcoming-events div {
+  padding: 50px 45px; }
+/* line 23, ../sass/_events.scss */
 div.upcoming-events .date {
   background-color: #84425d;
   padding: 20px;
   border-radius: 50%;
   height: 130px;
   width: 130px;
-  margin: 50px auto 30px; }
-/* line 26, ../sass/_events.scss */
+  margin: 0 auto 30px; }
+/* line 33, ../sass/_events.scss */
 div.upcoming-events h3 {
   color: #84425d;
   font-size: 18px;
   line-height: 30px;
-  height: 80px;
+  height: 90px;
   vertical-align: middle;
   padding: 0 50px; }
-/* line 36, ../sass/_events.scss */
+  @media screen and (max-width: 1200px) {
+    /* line 33, ../sass/_events.scss */
+    div.upcoming-events h3 {
+      padding: 0;
+      height: auto; } }
+  @media screen and (min-width: 92px) {
+    /* line 33, ../sass/_events.scss */
+    div.upcoming-events h3 {
+      padding: 0;
+      height: 150; } }
+  @media screen and (max-width: 768px) {
+    /* line 33, ../sass/_events.scss */
+    div.upcoming-events h3 {
+      padding: 0;
+      max-width: 300px;
+      margin: auto;
+      height: 150; } }
+/* line 62, ../sass/_events.scss */
 div.upcoming-events .border-event {
   width: 150px;
+  padding: 0;
   margin: 20px auto 25px; }
-/* line 41, ../sass/_events.scss */
+/* line 68, ../sass/_events.scss */
 div.upcoming-events p {
   color: #f57a30;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  padding: 0 45px;
-  height: 63px; }
+  height: 70px;
+  margin-bottom: 35px; }
+  @media screen and (max-width: 1200px) {
+    /* line 68, ../sass/_events.scss */
+    div.upcoming-events p {
+      height: 120px; } }
+
+/* line 100, ../sass/_events.scss */
+div.row .event-single-home {
+  background-color: #fff1cf;
+  background-image: url(/accessories/2-layers.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none; }
+  /* line 110, ../sass/_events.scss */
+  div.row .event-single-home a {
+    bottom: 15px; }
 
 /*# sourceMappingURL=laca.css.map */
