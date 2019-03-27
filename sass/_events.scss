@@ -14,9 +14,21 @@
 
 div.upcoming-events{
 
+    padding: 110px 0;
+
+    h2{
+        margin-bottom: 60px;
+    }
+
     div{
         padding: 50px 45px;
       
+    }
+
+    .btn-vrap{
+        padding: 0;
+        border: 0;
+        margin-top: 70px;
     }
 
  
@@ -37,26 +49,7 @@ div.upcoming-events{
         line-height: 30px;
         height: 90px;
         vertical-align: middle;
-        padding: 0 50px;
-
-        @media screen and (max-width: 1200px) {
-            padding: 0;
-            height: auto;
-
-          }  
-        
-          @media screen and (min-width: 92px) {
-            padding: 0;
-            height: 150;
-
-          }  
-          @media screen and (max-width: 768px) {
-            padding: 0;
-            max-width: 300px;
-            margin: auto;
-            height: 150;
-
-          }
+      
     }
 
     .border-event{
@@ -74,23 +67,6 @@ div.upcoming-events{
         height: 70px;
         margin-bottom: 35px; 
 
-        @media screen and (max-width: 1200px) {
-            height: 120px;
-
-          }
-        
-        //   @media screen and (max-width: 92px) {
-        //     padding: 0;
-        //     height: 150;
-
-        //   }  
-        //   @media screen and (max-width: 768px) {
-        //     padding: 0;
-        //     // max-width: 300px;
-        //     margin: auto;
-        //     height: 150;
-
-        //   }
     }
 }
 

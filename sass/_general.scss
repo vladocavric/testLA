@@ -1,6 +1,6 @@
-*{
-    // border: 1px solid red;
-}
+// *{
+//     border: 1px solid red;
+// }
 body{
     font-family: "Poppins";
     background-color: $background;
@@ -14,7 +14,7 @@ a:hover{
 h2{
     font-size: 36px !important;
     display: block !important;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     @media screen and (max-width: 992px){
         font-size: 30px !important;
     }
