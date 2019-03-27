@@ -1,0 +1,17 @@
+.our-services{
+    padding: 100px 0 110px;
+    background-image: url(/accessories/Layer_25.png);
+    background-size: cover; 
+
+    .our-services-vraper{
+        border: 0;
+        padding: 0;
+
+        .service{
+            margin: 0 0 0 0;
+            border-color: $laca-gray;
+            border-radius: 0;
+            border: 0 1px 0 0;
+        }
+    }
+}

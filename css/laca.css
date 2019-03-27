@@ -18,8 +18,13 @@ h2 {
     h2 {
       font-size: 30px !important; } }
 
+/* line 24, ../sass/_general.scss */
+h3 {
+  font-size: 18px;
+  font-weight: 400; }
+
 @media screen and (min-width: 1140px) {
-  /* line 24, ../sass/_general.scss */
+  /* line 29, ../sass/_general.scss */
   .container-fluid {
     max-width: 1400px; } }
 
@@ -321,16 +326,15 @@ div.upcoming-events {
   /* line 45, ../sass/_events.scss */
   div.upcoming-events h3 {
     color: #84425d;
-    font-size: 18px;
     line-height: 30px;
     height: 90px;
     vertical-align: middle; }
-  /* line 55, ../sass/_events.scss */
+  /* line 53, ../sass/_events.scss */
   div.upcoming-events .border-event {
     width: 150px;
     padding: 0;
     margin: 20px auto 25px; }
-  /* line 61, ../sass/_events.scss */
+  /* line 59, ../sass/_events.scss */
   div.upcoming-events p {
     color: #f57a30;
     font-size: 14px;
@@ -339,7 +343,7 @@ div.upcoming-events {
     height: 70px;
     margin-bottom: 35px; }
 
-/* line 76, ../sass/_events.scss */
+/* line 74, ../sass/_events.scss */
 div.row .event-single-home {
   background-color: #fff1cf;
   background-image: url(/accessories/2-layers.png);
@@ -347,8 +351,24 @@ div.row .event-single-home {
   background-repeat: no-repeat;
   background-size: cover;
   border: none; }
-  /* line 86, ../sass/_events.scss */
+  /* line 84, ../sass/_events.scss */
   div.row .event-single-home a {
     bottom: 15px; }
+
+/* line 1, ../sass/_ourservices.scss */
+.our-services {
+  padding: 100px 0 110px;
+  background-image: url(/accessories/Layer_25.png);
+  background-size: cover; }
+  /* line 6, ../sass/_ourservices.scss */
+  .our-services .our-services-vraper {
+    border: 0;
+    padding: 0; }
+    /* line 10, ../sass/_ourservices.scss */
+    .our-services .our-services-vraper .service {
+      margin: 0 0 0 0;
+      border-color: #e1e4ed;
+      border-radius: 0;
+      border: 0 1px 0 0; }
 
 /*# sourceMappingURL=laca.css.map */
