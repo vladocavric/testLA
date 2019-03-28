@@ -21,7 +21,7 @@
     width: 60px;
     height: 60px;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: $laca-orange;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -35,16 +35,37 @@
 }
 
 .carousel-indicators {
-
-    li{
+    align-items: center;
+    
+    li {
         width: 8px;
         height: 8px;
+        line-height: 1;
         margin: 0 10px;
+        border: none;
         border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(2);
+            border: 1px solid #fff;
+            border-radius: 50%;
+            opacity: 0;
+            transition: transform 1000ms cubic-bezier(0.47, 0.34, 0.01, 0.99);
+        }
+        
+        &.active {
+            &:before {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
     }
    
 }
