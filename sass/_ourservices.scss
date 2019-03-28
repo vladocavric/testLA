@@ -3,15 +3,71 @@
     background-image: url(/accessories/Layer_25.png);
     background-size: cover; 
 
+    h2{
+        margin-bottom: 60px;
+    }
+
     .our-services-vraper{
         border: 0;
-        padding: 0;
+        padding:0;
+        background-color: $background;  
 
         .service{
             margin: 0;
-            border-color: $laca-gray;
             border-radius: 0;
-            border: 0 1px 0 0;
+            border: 0;
+            padding: 90px 0px 120px;
+
+            &:last-child{
+                .service-vrap-single{
+                    border: 0;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                margin: auto;
+                border-bottom: 1px solid $laca-gray;
+                
+              }
+
+            .service-vrap-single{
+                height: 320px;
+                border-right: 1px solid $laca-gray;
+                padding: 0 60px;
+
+                @media screen and (max-width: 992px) {
+                    border: 0;
+                    padding: 0 15px;
+                  }
+
+                @media screen and (max-width: 576px) {
+                    border: 0;
+                  }
+
+                span img{
+                    margin-bottom: 35px;
+                }
+
+                h3{
+                    line-height: 30px;
+                }
+
+                .border-service{
+                    border: 0;
+                    border-bottom: 1px solid $laca-orange;
+                    width: 70px;
+                    margin: 30px auto;
+                }
+
+                P{
+                    margin-bottom: 50px;
+                }
+
+                a{
+                    margin-top: 50px;
+                }
+            }
+
         }
     }
 }

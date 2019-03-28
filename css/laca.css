@@ -21,12 +21,17 @@ h2 {
 /* line 24, ../sass/_general.scss */
 h3 {
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 600; }
 
 @media screen and (min-width: 1140px) {
   /* line 29, ../sass/_general.scss */
   .container-fluid {
     max-width: 1400px; } }
+
+/* line 36, ../sass/_general.scss */
+p {
+  font-size: 14px;
+  font-weight: 400; }
 
 /* line 1, ../sass/_navbar.scss */
 nav {
@@ -127,22 +132,18 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f57a30;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%; }
+  border-radius: 50%; }
 
-/* line 33, ../sass/_slider.scss */
+/* line 30, ../sass/_slider.scss */
 .carousel-control-next-icon, .carousel-control-prev-icon {
   height: 60px; }
 
-/* line 37, ../sass/_slider.scss */
+/* line 34, ../sass/_slider.scss */
 .carousel-indicators {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 40, ../sass/_slider.scss */
+  /* line 37, ../sass/_slider.scss */
   .carousel-indicators li {
     width: 8px;
     height: 8px;
@@ -151,7 +152,7 @@ nav {
     border: none;
     border-radius: 50%;
     position: relative; }
-    /* line 49, ../sass/_slider.scss */
+    /* line 46, ../sass/_slider.scss */
     .carousel-indicators li:before {
       content: '';
       position: absolute;
@@ -168,13 +169,13 @@ nav {
       transition: -webkit-transform 1000ms cubic-bezier(0.47, 0.34, 0.01, 0.99);
       transition: transform 1000ms cubic-bezier(0.47, 0.34, 0.01, 0.99);
       transition: transform 1000ms cubic-bezier(0.47, 0.34, 0.01, 0.99), -webkit-transform 1000ms cubic-bezier(0.47, 0.34, 0.01, 0.99); }
-    /* line 64, ../sass/_slider.scss */
+    /* line 61, ../sass/_slider.scss */
     .carousel-indicators li.active:before {
       opacity: 1;
       -webkit-transform: translate(-50%, -50%) scale(1);
               transform: translate(-50%, -50%) scale(1); }
 
-/* line 73, ../sass/_slider.scss */
+/* line 70, ../sass/_slider.scss */
 .carousel-caption p {
   margin-bottom: 35px; }
 
@@ -246,14 +247,14 @@ nav {
     background-color: #f8b185; }
 
 /* line 3, ../sass/_social.scss */
-div.row div {
+div.row div.twiter, div.row div.instagram {
   margin: 17px;
   border-radius: 5px;
   border: 1px solid rgba(245, 122, 48, 0.33);
   background-color: #fffeff;
   padding: 0; }
   /* line 10, ../sass/_social.scss */
-  div.row div h4 {
+  div.row div.twiter h4, div.row div.instagram h4 {
     color: #fffeff;
     font-size: 14px;
     font-weight: 400;
@@ -262,19 +263,15 @@ div.row div {
     letter-spacing: 1.4px;
     background-color: #84425d;
     padding: 22px;
-    border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -ms-border-radius: 5px 5px 0 0;
-    -o-border-radius: 5px 5px 0 0; }
-  /* line 25, ../sass/_social.scss */
-  div.row div button {
+    border-radius: 5px 5px 0 0; }
+  /* line 22, ../sass/_social.scss */
+  div.row div.twiter button, div.row div.instagram button {
     margin-bottom: 35px; }
 
-/* line 31, ../sass/_social.scss */
+/* line 28, ../sass/_social.scss */
 .instagram .insta-photos {
   border: 0; }
-  /* line 34, ../sass/_social.scss */
+  /* line 31, ../sass/_social.scss */
   .instagram .insta-photos img {
     max-width: 170px;
     height: auto;
@@ -282,10 +279,10 @@ div.row div {
     margin: 10px;
     padding: 0; }
 
-/* line 43, ../sass/_social.scss */
+/* line 40, ../sass/_social.scss */
 .social-media {
   margin: 110px 0; }
-  /* line 47, ../sass/_social.scss */
+  /* line 44, ../sass/_social.scss */
   .social-media .container {
     max-width: none; }
 
@@ -352,18 +349,26 @@ div.row div {
 /* line 15, ../sass/_events.scss */
 div.upcoming-events {
   padding: 110px 0; }
-  /* line 19, ../sass/_events.scss */
+  @media screen and (max-width: 992px) {
+    /* line 15, ../sass/_events.scss */
+    div.upcoming-events {
+      padding: 30px 0; } }
+  /* line 23, ../sass/_events.scss */
   div.upcoming-events h2 {
     margin-bottom: 60px; }
-  /* line 23, ../sass/_events.scss */
+    @media screen and (max-width: 992px) {
+      /* line 23, ../sass/_events.scss */
+      div.upcoming-events h2 {
+        margin-bottom: 0; } }
+  /* line 30, ../sass/_events.scss */
   div.upcoming-events div {
     padding: 50px 45px; }
-  /* line 28, ../sass/_events.scss */
+  /* line 35, ../sass/_events.scss */
   div.upcoming-events .btn-vrap {
     padding: 0;
     border: 0;
     margin-top: 70px; }
-  /* line 35, ../sass/_events.scss */
+  /* line 42, ../sass/_events.scss */
   div.upcoming-events .date {
     background-color: #84425d;
     padding: 20px;
@@ -371,18 +376,20 @@ div.upcoming-events {
     height: 130px;
     width: 130px;
     margin: 0 auto 30px; }
-  /* line 45, ../sass/_events.scss */
+  /* line 52, ../sass/_events.scss */
   div.upcoming-events h3 {
     color: #84425d;
     line-height: 30px;
     height: 90px;
     vertical-align: middle; }
-  /* line 53, ../sass/_events.scss */
+  /* line 60, ../sass/_events.scss */
   div.upcoming-events .border-event {
+    border: 0;
+    border-bottom: 1px solid rgba(245, 122, 48, 0.4);
     width: 150px;
     padding: 0;
     margin: 20px auto 25px; }
-  /* line 59, ../sass/_events.scss */
+  /* line 68, ../sass/_events.scss */
   div.upcoming-events p {
     color: #f57a30;
     font-size: 14px;
@@ -391,15 +398,21 @@ div.upcoming-events {
     height: 70px;
     margin-bottom: 35px; }
 
-/* line 74, ../sass/_events.scss */
+/* line 83, ../sass/_events.scss */
 div.row .event-single-home {
   background-color: #fff1cf;
   background-image: url(/accessories/2-layers.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: none; }
-  /* line 84, ../sass/_events.scss */
+  border: none;
+  margin: 0 17px;
+  border-radius: 5px; }
+  @media screen and (max-width: 992px) {
+    /* line 83, ../sass/_events.scss */
+    div.row .event-single-home {
+      margin: 30px; } }
+  /* line 99, ../sass/_events.scss */
   div.row .event-single-home a {
     bottom: 15px; }
 
@@ -409,14 +422,58 @@ div.row .event-single-home {
   background-image: url(/accessories/Layer_25.png);
   background-size: cover; }
   /* line 6, ../sass/_ourservices.scss */
+  .our-services h2 {
+    margin-bottom: 60px; }
+  /* line 10, ../sass/_ourservices.scss */
   .our-services .our-services-vraper {
     border: 0;
-    padding: 0; }
-    /* line 10, ../sass/_ourservices.scss */
+    padding: 0;
+    background-color: #fffeff; }
+    /* line 15, ../sass/_ourservices.scss */
     .our-services .our-services-vraper .service {
       margin: 0;
-      border-color: #e1e4ed;
       border-radius: 0;
-      border: 0 1px 0 0; }
+      border: 0;
+      padding: 90px 0px 120px; }
+      /* line 22, ../sass/_ourservices.scss */
+      .our-services .our-services-vraper .service:last-child .service-vrap-single {
+        border: 0; }
+      @media screen and (max-width: 992px) {
+        /* line 15, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service {
+          margin: auto;
+          border-bottom: 1px solid #e1e4ed; } }
+      /* line 33, ../sass/_ourservices.scss */
+      .our-services .our-services-vraper .service .service-vrap-single {
+        height: 320px;
+        border-right: 1px solid #e1e4ed;
+        padding: 0 60px; }
+        @media screen and (max-width: 992px) {
+          /* line 33, ../sass/_ourservices.scss */
+          .our-services .our-services-vraper .service .service-vrap-single {
+            border: 0;
+            padding: 0 15px; } }
+        @media screen and (max-width: 576px) {
+          /* line 33, ../sass/_ourservices.scss */
+          .our-services .our-services-vraper .service .service-vrap-single {
+            border: 0; } }
+        /* line 47, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service .service-vrap-single span img {
+          margin-bottom: 35px; }
+        /* line 51, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service .service-vrap-single h3 {
+          line-height: 30px; }
+        /* line 55, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service .service-vrap-single .border-service {
+          border: 0;
+          border-bottom: 1px solid #f57a30;
+          width: 70px;
+          margin: 30px auto; }
+        /* line 62, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service .service-vrap-single P {
+          margin-bottom: 50px; }
+        /* line 66, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service .service-vrap-single a {
+          margin-top: 50px; }
 
 /*# sourceMappingURL=laca.css.map */
