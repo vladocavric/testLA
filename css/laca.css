@@ -12,23 +12,24 @@ a:hover {
 h2 {
   font-size: 36px !important;
   display: block !important;
-  font-weight: 600 !important; }
+  font-weight: 600 !important;
+  text-align: center; }
   @media screen and (max-width: 992px) {
     /* line 14, ../sass/_general.scss */
     h2 {
       font-size: 30px !important; } }
 
-/* line 24, ../sass/_general.scss */
+/* line 26, ../sass/_general.scss */
 h3 {
   font-size: 18px;
   font-weight: 600; }
 
 @media screen and (min-width: 1140px) {
-  /* line 29, ../sass/_general.scss */
+  /* line 31, ../sass/_general.scss */
   .container-fluid {
     max-width: 1400px; } }
 
-/* line 36, ../sass/_general.scss */
+/* line 38, ../sass/_general.scss */
 p {
   font-size: 14px;
   font-weight: 400; }
