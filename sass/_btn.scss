@@ -71,6 +71,33 @@
     &:hover{
         background-color: $laca-orange-hover; 
     }
- 
+}
 
+.btn-orange-link{
+    color: $laca-orange;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 33px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 6px 0;
+   
+
+    &:hover{
+        color: $laca-orange !important;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $laca-orange;
+        transition: width .3s;
+    }
+    
+    &:hover::after {
+        width: 34%;
+        // transition: width .3s;
+    }
 }

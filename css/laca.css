@@ -24,12 +24,17 @@ h3 {
   font-size: 18px;
   font-weight: 600; }
 
+/* line 31, ../sass/_general.scss */
+h5 {
+  font-size: 16px;
+  font-weight: 600; }
+
 @media screen and (min-width: 1140px) {
-  /* line 31, ../sass/_general.scss */
+  /* line 36, ../sass/_general.scss */
   .container-fluid {
     max-width: 1400px; } }
 
-/* line 38, ../sass/_general.scss */
+/* line 43, ../sass/_general.scss */
 p {
   font-size: 14px;
   font-weight: 400; }
@@ -246,6 +251,31 @@ nav {
   /* line 71, ../sass/_btn.scss */
   .btn-orange-revers:hover {
     background-color: #f8b185; }
+
+/* line 76, ../sass/_btn.scss */
+.btn-orange-link {
+  color: #f57a30;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 33px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 6px 0; }
+  /* line 86, ../sass/_btn.scss */
+  .btn-orange-link:hover {
+    color: #f57a30 !important; }
+  /* line 90, ../sass/_btn.scss */
+  .btn-orange-link:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f57a30;
+    -webkit-transition: width .3s;
+    transition: width .3s; }
+  /* line 99, ../sass/_btn.scss */
+  .btn-orange-link:hover::after {
+    width: 34%; }
 
 /* line 3, ../sass/_social.scss */
 div.row div.twiter, div.row div.instagram {
@@ -476,5 +506,15 @@ div.row .event-single-home {
         /* line 66, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service .service-vrap-single a {
           margin-top: 50px; }
+
+/* line 1, ../sass/_news.scss */
+.regional-news {
+  background-color: #fff1cf;
+  margin: 0; }
+
+/* line 7, ../sass/_news.scss */
+.card-body p {
+  color: #231f20;
+  line-height: 24px; }
 
 /*# sourceMappingURL=laca.css.map */
