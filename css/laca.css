@@ -808,7 +808,7 @@ div.row .event-single-home {
       /* line 29, ../sass/_news.scss */
       .regional-news .card .card-body a {
         position: absolute;
-        bottom: 0; }
+        bottom: 15px; }
     /* line 36, ../sass/_news.scss */
     .regional-news .card .card-img-top {
       border-radius: 0; }
