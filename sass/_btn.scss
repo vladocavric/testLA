@@ -60,7 +60,7 @@
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 16px 45px;
+    padding: 15px 55px;
     border: 2px solid $laca-orange;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -97,7 +97,7 @@
     }
     
     &:hover::after {
-        width: 34%;
+        width: 100%;
         // transition: width .3s;
     }
 }

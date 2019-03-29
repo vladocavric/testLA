@@ -1,6 +1,42 @@
 .regional-news{
     background-color: $laca-yellow;
     margin: 0;
+    padding: 110px 0 100px;
+
+    h2{
+        margin-bottom: 60px; 
+    }
+
+    .regional-news-vrap{
+        margin-bottom: 50px; 
+    }
+    
+    .card {
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 20px;
+        height: 500px;
+
+        @media screen and (max-width: 768px) {
+            height: auto;
+        }
+
+        .card-body{
+            position: relative;
+            padding: 35px 30px;
+
+            a{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+
+        .card-img-top{
+            border-radius: 0;
+        }
+    }
 }
 
 .card-body{
