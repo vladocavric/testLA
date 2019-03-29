@@ -1,0 +1,19 @@
+.slider {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.slick-prev, .slick-next {
+    background: red;
+    z-index: 10;
+}
+
+.slick-prev {
+    left: 20px;
+} 
+
+.slick-next {
+    right: 20px;
+}

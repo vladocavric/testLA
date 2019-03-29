@@ -1,3 +1,262 @@
+@charset "UTF-8";
+/* Slider */
+/* line 3, ../sass/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 17, ../sass/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 24, ../sass/_slick.scss */
+  .slick-list:focus {
+    outline: none; }
+  /* line 28, ../sass/_slick.scss */
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+/* line 33, ../sass/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 42, ../sass/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 50, ../sass/_slick.scss */
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  /* line 56, ../sass/_slick.scss */
+  .slick-track:after {
+    clear: both; }
+  /* line 60, ../sass/_slick.scss */
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+/* line 64, ../sass/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  /* line 68, ../sass/_slick.scss */
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  /* line 71, ../sass/_slick.scss */
+  .slick-slide img {
+    display: block; }
+  /* line 74, ../sass/_slick.scss */
+  .slick-slide.slick-loading img {
+    display: none; }
+  /* line 80, ../sass/_slick.scss */
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  /* line 84, ../sass/_slick.scss */
+  .slick-initialized .slick-slide {
+    display: block; }
+  /* line 88, ../sass/_slick.scss */
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  /* line 92, ../sass/_slick.scss */
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* line 98, ../sass/_slick.scss */
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+/* line 45, ../sass/_slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url("../images/ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick/slick.eot");
+  src: url("../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick/slick.woff") format("woff"), url("../fonts/slick/slick.ttf") format("truetype"), url("../fonts/slick/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Arrows */
+/* line 63, ../sass/_slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  /* line 81, ../sass/_slick-theme.scss */
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    /* line 85, ../sass/_slick-theme.scss */
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  /* line 89, ../sass/_slick-theme.scss */
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+  /* line 92, ../sass/_slick-theme.scss */
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+/* line 103, ../sass/_slick-theme.scss */
+.slick-prev {
+  left: -25px; }
+  /* line 105, ../sass/_slick-theme.scss */
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  /* line 109, ../sass/_slick-theme.scss */
+  .slick-prev:before {
+    content: "←"; }
+    /* line 111, ../sass/_slick-theme.scss */
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+/* line 117, ../sass/_slick-theme.scss */
+.slick-next {
+  right: -25px; }
+  /* line 119, ../sass/_slick-theme.scss */
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  /* line 123, ../sass/_slick-theme.scss */
+  .slick-next:before {
+    content: "→"; }
+    /* line 125, ../sass/_slick-theme.scss */
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+/* line 133, ../sass/_slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 137, ../sass/_slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  /* line 146, ../sass/_slick-theme.scss */
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    /* line 154, ../sass/_slick-theme.scss */
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      /* line 166, ../sass/_slick-theme.scss */
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        /* line 168, ../sass/_slick-theme.scss */
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      /* line 172, ../sass/_slick-theme.scss */
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    /* line 189, ../sass/_slick-theme.scss */
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
+/* line 2, ../sass/_slick-custom.scss */
+.slider img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 8, ../sass/_slick-custom.scss */
+.slick-prev, .slick-next {
+  background: red;
+  z-index: 10; }
+
+/* line 13, ../sass/_slick-custom.scss */
+.slick-prev {
+  left: 20px; }
+
+/* line 17, ../sass/_slick-custom.scss */
+.slick-next {
+  right: 20px; }
+
 /* line 4, ../sass/_general.scss */
 body {
   font-family: "Poppins";
@@ -458,52 +717,65 @@ div.row .event-single-home {
   /* line 10, ../sass/_ourservices.scss */
   .our-services .our-services-vraper {
     border: 0;
-    padding: 0;
-    background-color: #fffeff; }
-    /* line 15, ../sass/_ourservices.scss */
+    padding: 0; }
+    /* line 17, ../sass/_ourservices.scss */
+    .our-services .our-services-vraper > div:not(:last-child) {
+      padding-right: 0; }
+    /* line 21, ../sass/_ourservices.scss */
+    .our-services .our-services-vraper > div:not(:first-child) {
+      padding-left: 0; }
+    /* line 30, ../sass/_ourservices.scss */
     .our-services .our-services-vraper .service {
       margin: 0;
       border-radius: 0;
       border: 0;
-      padding: 90px 0px 120px; }
-      /* line 22, ../sass/_ourservices.scss */
-      .our-services .our-services-vraper .service:last-child .service-vrap-single {
-        border: 0; }
+      padding-top: 90px;
+      padding-bottom: 120px;
+      background-color: #fffeff; }
       @media screen and (max-width: 992px) {
-        /* line 15, ../sass/_ourservices.scss */
+        /* line 30, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service {
           margin: auto;
           border-bottom: 1px solid #e1e4ed; } }
-      /* line 33, ../sass/_ourservices.scss */
+      /* line 52, ../sass/_ourservices.scss */
       .our-services .our-services-vraper .service .service-vrap-single {
         height: 320px;
-        border-right: 1px solid #e1e4ed;
-        padding: 0 60px; }
+        padding: 0 60px;
+        position: relative; }
+        /* line 58, ../sass/_ourservices.scss */
+        .our-services .our-services-vraper .service .service-vrap-single:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 1px;
+          background-color: #e1e4ed; }
         @media screen and (max-width: 992px) {
-          /* line 33, ../sass/_ourservices.scss */
+          /* line 52, ../sass/_ourservices.scss */
           .our-services .our-services-vraper .service .service-vrap-single {
             border: 0;
             padding: 0 15px; } }
         @media screen and (max-width: 576px) {
-          /* line 33, ../sass/_ourservices.scss */
+          /* line 52, ../sass/_ourservices.scss */
           .our-services .our-services-vraper .service .service-vrap-single {
             border: 0; } }
-        /* line 47, ../sass/_ourservices.scss */
+        /* line 78, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service .service-vrap-single span img {
           margin-bottom: 35px; }
-        /* line 51, ../sass/_ourservices.scss */
+        /* line 82, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service .service-vrap-single h3 {
           line-height: 30px; }
-        /* line 55, ../sass/_ourservices.scss */
+        /* line 86, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service .service-vrap-single .border-service {
           border: 0;
           border-bottom: 1px solid #f57a30;
           width: 70px;
           margin: 30px auto; }
-        /* line 62, ../sass/_ourservices.scss */
+        /* line 93, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service .service-vrap-single P {
           margin-bottom: 50px; }
-        /* line 66, ../sass/_ourservices.scss */
+        /* line 97, ../sass/_ourservices.scss */
         .our-services .our-services-vraper .service .service-vrap-single a {
           margin-top: 50px; }
 

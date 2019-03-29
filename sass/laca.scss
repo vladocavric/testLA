@@ -1,6 +1,11 @@
 // variables
 @import 'colors.scss';
 
+// plugins
+@import 'slick.scss';
+@import 'slick-theme.scss';
+@import 'slick-custom.scss';
+
 // rest
 @import 'general.scss';
 @import 'navbar.scss';
