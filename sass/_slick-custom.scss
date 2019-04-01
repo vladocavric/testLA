@@ -1,13 +1,27 @@
-.slider {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+// .slider {
+//     img {
+//         max-width: 100%;
+//         height: 80%;
+//         object-fit: cover;
+//     }
+// }
 
 .slick-prev, .slick-next {
-    background: red;
-    z-index: 10;
+    display: flex;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: $laca-orange;
+    border-radius: 50%;
+    z-index: 100;
+    // right: 0;
+    // left: 0;
+
+    &:hover{
+        background-color: $laca-orange-hover;
+    }
 }
 
 .slick-prev {

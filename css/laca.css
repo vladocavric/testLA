@@ -66,26 +66,28 @@
     float: right; }
   /* line 71, ../sass/_slick.scss */
   .slick-slide img {
-    display: block; }
-  /* line 74, ../sass/_slick.scss */
+    display: block;
+    width: 80%;
+    max-width: 635px; }
+  /* line 76, ../sass/_slick.scss */
   .slick-slide.slick-loading img {
     display: none; }
-  /* line 80, ../sass/_slick.scss */
+  /* line 82, ../sass/_slick.scss */
   .slick-slide.dragging img {
     pointer-events: none; }
-  /* line 84, ../sass/_slick.scss */
+  /* line 86, ../sass/_slick.scss */
   .slick-initialized .slick-slide {
     display: block; }
-  /* line 88, ../sass/_slick.scss */
+  /* line 90, ../sass/_slick.scss */
   .slick-loading .slick-slide {
     visibility: hidden; }
-  /* line 92, ../sass/_slick.scss */
+  /* line 94, ../sass/_slick.scss */
   .slick-vertical .slick-slide {
     display: block;
     height: auto;
     border: 1px solid transparent; }
 
-/* line 98, ../sass/_slick.scss */
+/* line 100, ../sass/_slick.scss */
 .slick-arrow.slick-hidden {
   display: none; }
 
@@ -239,21 +241,33 @@
       color: black;
       opacity: 0.75; }
 
-/* line 2, ../sass/_slick-custom.scss */
-.slider img {
-  max-width: 100%;
-  height: auto; }
-
-/* line 8, ../sass/_slick-custom.scss */
+/* line 9, ../sass/_slick-custom.scss */
 .slick-prev, .slick-next {
-  background: red;
-  z-index: 10; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f57a30;
+  border-radius: 50%;
+  z-index: 100; }
+  /* line 22, ../sass/_slick-custom.scss */
+  .slick-prev:hover, .slick-next:hover {
+    background-color: #f8b185; }
 
-/* line 13, ../sass/_slick-custom.scss */
+/* line 27, ../sass/_slick-custom.scss */
 .slick-prev {
   left: 20px; }
 
-/* line 17, ../sass/_slick-custom.scss */
+/* line 31, ../sass/_slick-custom.scss */
 .slick-next {
   right: 20px; }
 
@@ -487,13 +501,6 @@ nav {
     background-color: #f8b185; }
 
 /* line 49, ../sass/_btn.scss */
-.btn-test {
-  color: white;
-  background: red;
-  padding: 12px;
-  border-radius: 5px; }
-
-/* line 56, ../sass/_btn.scss */
 .btn-orange-revers {
   color: #f57a30;
   font-family: Poppins;
@@ -507,11 +514,11 @@ nav {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px; }
-  /* line 71, ../sass/_btn.scss */
+  /* line 64, ../sass/_btn.scss */
   .btn-orange-revers:hover {
     background-color: #f8b185; }
 
-/* line 76, ../sass/_btn.scss */
+/* line 69, ../sass/_btn.scss */
 .btn-orange-link {
   color: #f57a30;
   font-size: 12px;
@@ -520,10 +527,10 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   padding: 6px 0; }
-  /* line 86, ../sass/_btn.scss */
+  /* line 79, ../sass/_btn.scss */
   .btn-orange-link:hover {
     color: #f57a30 !important; }
-  /* line 90, ../sass/_btn.scss */
+  /* line 83, ../sass/_btn.scss */
   .btn-orange-link:after {
     content: '';
     display: block;
@@ -532,7 +539,7 @@ nav {
     background: #f57a30;
     -webkit-transition: width .3s;
     transition: width .3s; }
-  /* line 99, ../sass/_btn.scss */
+  /* line 92, ../sass/_btn.scss */
   .btn-orange-link:hover::after {
     width: 100%; }
 
