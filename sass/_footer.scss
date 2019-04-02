@@ -1,0 +1,74 @@
+footer{
+    color: $background;
+    .footer-top{
+        background-color: $laca-purple;
+    }
+}
+
+
+.orange-text{
+    a{
+
+        color: $laca-orange;
+    }
+
+    a:hover{
+        border-bottom: 1px solid $laca-orange;
+    }
+}
+
+.laca-info{
+    font-size: 11px;
+    line-height: 15px;
+    div{
+
+        margin-bottom: 14px;
+
+        a{
+            font-weight: 500;
+        }
+    }
+}
+
+.info{
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.quick-links, .navigation{
+    ul{
+        list-style-type: none;
+        padding-inline-start: 17px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        
+    }
+
+    ul li::before {
+        content: "\2022";
+        color: white;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+      }
+}
+
+.quick-links{
+    ul{
+
+        column-count: 2;
+        column-gap: -15px;
+
+        // https://stackoverflow.com/questions/6509106/is-there-a-way-to-break-a-list-into-columns
+    }
+}
+
+.footer-bottom{
+    background: $tawny-port;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px;
+
+}
