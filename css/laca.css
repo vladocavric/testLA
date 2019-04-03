@@ -887,7 +887,7 @@ footer {
     font-size: 14px;
     font-weight: 600;
     line-height: 22px; }
-  /* line 57, ../sass/_footer.scss */
+  /* line 55, ../sass/_footer.scss */
   .quick-links ul li::before, .navigation ul li::before {
     content: "\2022";
     color: white;
@@ -897,7 +897,7 @@ footer {
     width: 1em;
     margin-left: -1em; }
 
-/* line 70, ../sass/_footer.scss */
+/* line 68, ../sass/_footer.scss */
 .quick-links ul {
   -webkit-column-count: 2;
           column-count: 2;
@@ -905,7 +905,7 @@ footer {
           column-gap: -250px;
   max-width: 240px; }
 
-/* line 80, ../sass/_footer.scss */
+/* line 78, ../sass/_footer.scss */
 .footer-bottom {
   background: #732C49;
   font-size: 12px;
