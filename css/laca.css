@@ -243,14 +243,16 @@
 
 /* line 2, ../sass/_slick-custom.scss */
 .slick-slide img {
-  width: 100%;
+  max-width: 100%;
+  width: 665px;
   height: 100%;
   max-height: 415px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 10px; }
+  margin: 0 10px;
+  left: 15px; }
 
-/* line 12, ../sass/_slick-custom.scss */
+/* line 13, ../sass/_slick-custom.scss */
 .slick-prev, .slick-next {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,18 +269,58 @@
           align-items: center;
   background-color: #f57a30;
   border-radius: 50%;
-  z-index: 100; }
-  /* line 25, ../sass/_slick-custom.scss */
+  z-index: 1000; }
+  /* line 27, ../sass/_slick-custom.scss */
+  .slick-prev:focus, .slick-next:focus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f57a30;
+    border-radius: 50%;
+    z-index: 1000; }
+  /* line 38, ../sass/_slick-custom.scss */
   .slick-prev:hover, .slick-next:hover {
     background-color: #f8b185; }
 
-/* line 30, ../sass/_slick-custom.scss */
+/* line 43, ../sass/_slick-custom.scss */
 .slick-prev {
-  left: 20px; }
+  left: -17px; }
 
-/* line 34, ../sass/_slick-custom.scss */
+/* line 47, ../sass/_slick-custom.scss */
 .slick-next {
-  right: 20px; }
+  right: -17px;
+  z-index: 1000; }
+
+/* line 51, ../sass/_slick-custom.scss */
+.slider-item {
+  position: relative;
+  color: white;
+  height: 410px;
+  z-index: -5; }
+  /* line 57, ../sass/_slick-custom.scss */
+  .slider-item p {
+    z-index: 1000;
+    position: absolute;
+    top: 50px;
+    padding: 35px; }
+  /* line 66, ../sass/_slick-custom.scss */
+  .slider-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -5; }
 
 /* line 4, ../sass/_general.scss */
 body {
@@ -625,7 +667,7 @@ div.row div.twiter, div.row div.instagram {
   background-repeat: no-repeat; }
   /* line 10, ../sass/_partner.scss */
   .featured-partner h2 {
-    padding: 100px 0 35px 0;
+    padding: 100px 0 31px 0;
     margin-bottom: 0; }
     @media screen and (max-width: 992px) {
       /* line 10, ../sass/_partner.scss */
