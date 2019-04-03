@@ -2,6 +2,7 @@ footer{
     color: $background;
     .footer-top{
         background-color: $laca-purple;
+        padding: 60px 0;
     }
 }
 
@@ -20,6 +21,7 @@ footer{
 .laca-info{
     font-size: 11px;
     line-height: 15px;
+    padding-right: 55px;
     div{
 
         margin-bottom: 14px;
@@ -33,9 +35,15 @@ footer{
 .info{
     font-size: 11px;
     line-height: 17px;
+    
 }
 
 .quick-links, .navigation{
+    padding-left: 65px;
+    @media screen and (max-width: 1200px) {
+        padding-left: 0; 
+        }
+
     ul{
         list-style-type: none;
         padding-inline-start: 17px;
@@ -43,11 +51,13 @@ footer{
         font-weight: 600;
         line-height: 22px;
         
+        
     }
 
     ul li::before {
         content: "\2022";
         color: white;
+        font-size: 20px;
         font-weight: bold;
         display: inline-block; 
         width: 1em;
@@ -59,7 +69,8 @@ footer{
     ul{
 
         column-count: 2;
-        column-gap: -15px;
+        column-gap: -250px;
+        max-width: 240px;
 
         // https://stackoverflow.com/questions/6509106/is-there-a-way-to-break-a-list-into-columns
     }

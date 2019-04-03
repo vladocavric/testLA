@@ -844,57 +844,68 @@ footer {
   color: #fffeff; }
   /* line 3, ../sass/_footer.scss */
   footer .footer-top {
-    background-color: #84425d; }
+    background-color: #84425d;
+    padding: 60px 0; }
 
-/* line 10, ../sass/_footer.scss */
+/* line 11, ../sass/_footer.scss */
 .orange-text a {
   color: #f57a30; }
-/* line 15, ../sass/_footer.scss */
+/* line 16, ../sass/_footer.scss */
 .orange-text a:hover {
   border-bottom: 1px solid #f57a30; }
 
-/* line 20, ../sass/_footer.scss */
+/* line 21, ../sass/_footer.scss */
 .laca-info {
   font-size: 11px;
-  line-height: 15px; }
-  /* line 23, ../sass/_footer.scss */
+  line-height: 15px;
+  padding-right: 55px; }
+  /* line 25, ../sass/_footer.scss */
   .laca-info div {
     margin-bottom: 14px; }
-    /* line 27, ../sass/_footer.scss */
+    /* line 29, ../sass/_footer.scss */
     .laca-info div a {
       font-weight: 500; }
 
-/* line 33, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .info {
   font-size: 11px;
   line-height: 17px; }
 
-/* line 39, ../sass/_footer.scss */
-.quick-links ul, .navigation ul {
-  list-style-type: none;
-  -webkit-padding-start: 17px;
-     -moz-padding-start: 17px;
-          padding-inline-start: 17px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 22px; }
-/* line 48, ../sass/_footer.scss */
-.quick-links ul li::before, .navigation ul li::before {
-  content: "\2022";
-  color: white;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em; }
+/* line 41, ../sass/_footer.scss */
+.quick-links, .navigation {
+  padding-left: 65px; }
+  @media screen and (max-width: 1200px) {
+    /* line 41, ../sass/_footer.scss */
+    .quick-links, .navigation {
+      padding-left: 0; } }
+  /* line 47, ../sass/_footer.scss */
+  .quick-links ul, .navigation ul {
+    list-style-type: none;
+    -webkit-padding-start: 17px;
+       -moz-padding-start: 17px;
+            padding-inline-start: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px; }
+  /* line 57, ../sass/_footer.scss */
+  .quick-links ul li::before, .navigation ul li::before {
+    content: "\2022";
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
 
-/* line 59, ../sass/_footer.scss */
+/* line 69, ../sass/_footer.scss */
 .quick-links ul {
   -webkit-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: -15px;
-          column-gap: -15px; }
+  -webkit-column-gap: -250px;
+          column-gap: -250px;
+  max-width: 240px; }
 
-/* line 68, ../sass/_footer.scss */
+/* line 79, ../sass/_footer.scss */
 .footer-bottom {
   background: #732C49;
   font-size: 12px;
