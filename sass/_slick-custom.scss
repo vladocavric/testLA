@@ -1,13 +1,11 @@
-.slick-slide {
-    img {
-        max-width: 100%;
-        width: 665px;
-        height: 100%;
-        max-height: 415px;
-        object-fit: cover;
-        margin: 0 10px;
-        left: 15px;
-    }
+// position of navigation
+.slick-prev {
+    left: 60px;
+} 
+
+.slick-next {
+    right: 60px;
+    z-index: 1000;
 }
 
 .slick-prev, .slick-next {
@@ -39,36 +37,51 @@
         background-color: $laca-orange-hover;
     }
 }
+//**************************************************************
 
-.slick-prev {
-    left: -17px;
-} 
 
-.slick-next {
-    right: -17px;
-    z-index: 1000;
-}
-.slider-item{
-    position: relative;
-    color: white;
-    height: 410px;
-    z-index: -5;
+// .slick-slide {
 
-    p{
-        z-index: 1000;
-        position: absolute;
-        top: 50px;
-        // left: 15px;
-        padding: 35px;
+//     margin: 18px;
+//     border: 1px solid orange;
+//     a{
+//         // margin: 0;
+//         // width: 665px;
+//         border: 1px solid purple;
 
-    }
-
-    img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        z-index: -5;
+//         .slider-item{
+//             position: relative;
+//             color: white;
+//             // height: 410px;
+//             width: 665px;
+//             z-index: -5;
+//             border: 1px solid red;
         
-    }
-}
+//             p{
+//                 z-index: 1000;
+//                 position: absolute;
+//                 top: 50px;
+//                 // left: 15px;
+//                 padding: 35px;
+        
+//             }
+
+//             img {
+//                 width: 100%!important;
+//                 width: 665px;
+//                 height: 100%;
+//                 // max-height: 415px;
+//                 object-fit: cover;
+//                 // position: absolute;
+//                 // top: 0;
+//                 left: 0;
+//                 // z-index: -5;
+//             }
+//         }
+//     }
+
+   
+// }
+
+
+
