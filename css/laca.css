@@ -290,6 +290,35 @@
   .slick-prev:hover, .slick-next:hover {
     background-color: #f8b185; }
 
+/* line 43, ../sass/_slick-custom.scss */
+.slick-slide {
+  margin: 18px; }
+  /* line 47, ../sass/_slick-custom.scss */
+  .slick-slide a {
+    margin: 0;
+    width: 665px; }
+    /* line 52, ../sass/_slick-custom.scss */
+    .slick-slide a .slider-item {
+      position: relative;
+      color: white;
+      height: 410px;
+      width: 665px;
+      z-index: -5; }
+      /* line 60, ../sass/_slick-custom.scss */
+      .slick-slide a .slider-item p {
+        z-index: 1000;
+        position: absolute;
+        top: 50px;
+        padding: 35px; }
+      /* line 69, ../sass/_slick-custom.scss */
+      .slick-slide a .slider-item img {
+        width: 100% !important;
+        width: 665px;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        left: 0; }
+
 /* line 4, ../sass/_general.scss */
 body {
   font-family: "Poppins";
@@ -351,7 +380,7 @@ nav.navbar {
   position: sticky;
   top: 0; }
   /* line 11, ../sass/_navbar.scss */
-  nav.navbar button {
+  nav.navbar button.navbar-toggler {
     padding: 15px; }
   /* line 14, ../sass/_navbar.scss */
   nav.navbar .navbar-toggler-icon {
