@@ -1,0 +1,25 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "gulp starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vlado",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladocavric/testLA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vladocavric/testLA/issues"
+  },
+  "homepage": "https://github.com/vladocavric/testLA#readme"
+}
