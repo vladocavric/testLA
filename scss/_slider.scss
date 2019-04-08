@@ -1,6 +1,9 @@
-.carousel-item img {
+.carousel-item {
+    
+    img {
     height: 700px;
     object-fit: cover;
+}
 }
 
 .logo-over-slider{
@@ -9,13 +12,53 @@
     height: 100px;
     box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.09);
     background-color: rgba(#fff1cf, 0.85);
-    z-index: 1;
+    z-index: 2;
     text-align: center;
+    img{
+        max-width: 420px;
+        width: 100%;
+    }
+}
+.carousel-caption{
+
+    margin-bottom: 120px;
+    p{
+        margin-bottom: 45px;
+    }
 }
 
+.hero-slider-date{
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    margin-bottom: 15px;
+}
+
+h2.hero-slider-title{
+    /* Style for "#Cookeditm" */
+
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 60px!important;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0.77px;
+    margin-bottom: 35px; 
+}
+
+.hero-slider-text{
+    max-width: 720px;
+    padding: 55px;
+    z-index: 1;
+    align-self: end;
+}
+
+//*************controles******************************
+
 .carousel-control{
-    // padding: 15px 17px 9px 13px;
-    // border: 1px solid red;
     display: flex;
     flex-shrink: 0;
     width: 60px;
@@ -24,7 +67,10 @@
     align-items: center;
     background-color: $laca-orange;
     border-radius: 50%;
-         
+            
+}
+.carousel-control-next, .carousel-control-prev{
+    z-index: 15;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -66,12 +112,6 @@
     }
    
 }
-
-.carousel-caption{
-
-    margin-bottom: 140px;
-    p{
-        margin-bottom: 35px;
-    }
+.carousel-indicators{
+    margin-bottom: 55px; 
 }
-

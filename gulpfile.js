@@ -8,11 +8,11 @@ function style() {
     //find my scss file
     return gulp.src('./scss/**/*.scss')
     //pas thtat file through sass compiler
-        .pipe(sass())
+    .pipe(sass())
     //where to save compiled CSS
-        .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./css'))
     // stream changes to all browsers
-        .pipe(browserSync.stream());
+    .pipe(browserSync.stream());
 }
 
 function watch() {
