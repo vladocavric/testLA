@@ -2,20 +2,38 @@
     background-image: url(/accessories/jordan-arnold-612264-unsplash.png);
     background-color: rgba($laca-yellow, 0.7);
     height: 650px;
+    @media screen and (max-width: 540px) {
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     
     .welcome-content{
         padding: 55px;
         text-align: center;
-        width: 720px;
+        width: 830px;
 
         h1{
             font-weight: 600;
-            font-size: 30px;
+            font-size: 40px;
+            color: #231f20;
+            margin-bottom: 40px; 
         }
         .border-welcome{
-            width: 60px;
+            width: 120px;
             border-bottom: 2px solid $laca-orange;
-            margin: 20px auto;
+            margin: 40px auto;
+        }
+
+        .welcome-highlighted{
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .welcome-not-highlighted{
+            line-height: 30px;
+            margin-bottom: 50px;
         }
     } 
 }
