@@ -360,7 +360,7 @@ nav.navbar {
     width: 100%; }
 
 .carousel-caption {
-  margin-bottom: 120px; }
+  margin-bottom: 65px; }
   .carousel-caption p {
     margin-bottom: 45px; }
 
@@ -432,7 +432,7 @@ h2.hero-slider-title {
       transform: translate(-50%, -50%) scale(1); }
 
 .carousel-indicators {
-  margin-bottom: 55px; }
+  margin-bottom: 50px; }
 
 .btn-orange {
   color: #fffeff;
