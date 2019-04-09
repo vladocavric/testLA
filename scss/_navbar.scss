@@ -4,6 +4,7 @@ nav.navbar{
     z-index: 1100;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: -0.35px;
     padding: 0;
     position: sticky;
     top: 0;
@@ -16,8 +17,6 @@ nav.navbar{
         height: 0;
         vertical-align: top;
         margin: 0 15px;
-        // padding: 5px;
-        // font-size: 33px;
     }
     
     a{
@@ -30,30 +29,28 @@ nav.navbar{
         a{
             color: black;
             font-weight: 700;
-        
         }
     }
-
-    
-    div{
-       
+  
+    form{
+        padding: 15px;
+    }
+    button.log-in-btn{
+        height: 39px;
+        background-color: #231f20;
+        color: #fffaf0;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.35px;
+        border: 0;
+        width: 118px;
+        border-radius: 50px;
         
-        button.log-in-btn{
-            height: 39px;
-            background-color: #231f20;
-            color: #fffaf0;
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: -0.35px;
-            border: 0;
-            width: 118px;
-            border-radius: 50px;
-            
-            &:hover{
-                background-color: $laca-orange-hover
-            } 
-        }
+        &:hover{
+            background-color: $laca-orange-hover
+        } 
+    }
 
         button.search-btn{
             color: #fffaf0;
@@ -61,17 +58,16 @@ nav.navbar{
             background-color: transparent;
             margin: 0 37px 0 20px;
         }
-    }
-
+    
     ul{
-        // display: flex;
-        // justify-content: center;
-        // padding: 0;
-        // margin: 0;
         li{
-            // list-style-type: none;
-            // color: white;
             padding: 12px 4px;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 16px;
+                font-weight: 600;  
+                padding: 0;           
+              }
 
          &:hover{
                 background-color: $laca-orange-hover 

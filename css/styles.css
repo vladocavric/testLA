@@ -304,6 +304,7 @@ nav.navbar {
   z-index: 1100;
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: -0.35px;
   padding: 0;
   position: sticky;
   top: 0; }
@@ -320,7 +321,9 @@ nav.navbar {
   nav.navbar li.active a {
     color: black;
     font-weight: 700; }
-  nav.navbar div button.log-in-btn {
+  nav.navbar form {
+    padding: 15px; }
+  nav.navbar button.log-in-btn {
     height: 39px;
     background-color: #231f20;
     color: #fffaf0;
@@ -331,15 +334,20 @@ nav.navbar {
     border: 0;
     width: 118px;
     border-radius: 50px; }
-    nav.navbar div button.log-in-btn:hover {
+    nav.navbar button.log-in-btn:hover {
       background-color: #f8b185; }
-  nav.navbar div button.search-btn {
+  nav.navbar button.search-btn {
     color: #fffaf0;
     border: 0;
     background-color: transparent;
     margin: 0 37px 0 20px; }
   nav.navbar ul li {
     padding: 12px 4px; }
+    @media screen and (max-width: 1200px) {
+      nav.navbar ul li {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0; } }
     nav.navbar ul li:hover {
       background-color: #f8b185; }
 
@@ -803,3 +811,9 @@ footer {
   font-size: 12px;
   font-weight: 400;
   padding: 20px; }
+
+.search-bar-input {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  font-size: 22px; }

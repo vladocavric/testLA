@@ -11,3 +11,7 @@ function slickInit() {
         // autoplaySpeed: 5000,
     })
 }
+
+$(".search-btn").click(function(){
+    $("input").toggleClass("d-none").focus();
+  });
