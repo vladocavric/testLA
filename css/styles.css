@@ -340,7 +340,8 @@ nav.navbar {
     color: #fffaf0;
     border: 0;
     background-color: transparent;
-    margin: 0 37px 0 20px; }
+    margin: 0 37px 0 20px;
+    font-size: 18px; }
   nav.navbar ul li {
     padding: 12px 4px; }
     @media screen and (max-width: 1200px) {
@@ -640,6 +641,12 @@ div.upcoming-events {
     line-height: 30px;
     height: 90px;
     vertical-align: middle; }
+    @media screen and (max-width: 1200px) {
+      div.upcoming-events h3 {
+        height: 140px; } }
+    @media screen and (max-width: 992px) {
+      div.upcoming-events h3 {
+        height: auto !important; } }
   div.upcoming-events .border-event {
     border: 0;
     border-bottom: 1px solid rgba(245, 122, 48, 0.4);
@@ -653,6 +660,9 @@ div.upcoming-events {
     line-height: 24px;
     height: 70px;
     margin-bottom: 35px; }
+    @media screen and (max-width: 992px) {
+      div.upcoming-events p {
+        height: auto !important; } }
 
 div.row .event-single-home {
   background-color: #fff1cf;
@@ -677,11 +687,19 @@ div.row .event-single-home {
     margin-bottom: 60px; }
   .our-services .our-services-vraper {
     border: 0;
-    padding: 0; }
+    padding: 0;
+    display: flex; }
     .our-services .our-services-vraper > div:not(:last-child) {
       padding-right: 0; }
     .our-services .our-services-vraper > div:not(:first-child) {
       padding-left: 0; }
+    .our-services .our-services-vraper > div:last-child .service .service-vrap-single:before {
+      width: 0; }
+    @media screen and (max-width: 992px) {
+      .our-services .our-services-vraper > div {
+        margin: auto;
+        border-bottom: 1px solid #e1e4ed;
+        padding: 0px; } }
     .our-services .our-services-vraper .service {
       margin: 0;
       border-radius: 0;
@@ -705,6 +723,9 @@ div.row .event-single-home {
           bottom: 0;
           width: 1px;
           background-color: #e1e4ed; }
+          @media screen and (max-width: 992px) {
+            .our-services .our-services-vraper .service .service-vrap-single:before {
+              width: 0; } }
         @media screen and (max-width: 992px) {
           .our-services .our-services-vraper .service .service-vrap-single {
             border: 0;
@@ -739,10 +760,23 @@ div.row .event-single-home {
     border: 0;
     border-radius: 0;
     margin-bottom: 20px;
-    height: 500px; }
+    height: 500px;
+    position: relative; }
     @media screen and (max-width: 768px) {
       .regional-news .card {
         height: auto; } }
+    .regional-news .card .card-date {
+      background: #000000;
+      padding: 0px 8px !important;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      position: absolute;
+      margin: 20px 0 0 30px;
+      top: 20 !important;
+      left: 30; }
     .regional-news .card .card-body {
       position: relative;
       padding: 35px 30px; }
@@ -815,5 +849,14 @@ footer {
 .search-bar-input {
   width: 100%;
   border: 0;
+  box-shadow: 0px 5px 5px gray;
   padding: 10px;
-  font-size: 22px; }
+  font-size: 22px;
+  position: fixed;
+  margin-top: 0px;
+  z-index: 10000000; }
+
+.latest-news {
+  padding: 100px 0 65px; }
+  .latest-news h2 {
+    margin-bottom: 40px; }

@@ -17,9 +17,25 @@
         border-radius: 0;
         margin-bottom: 20px;
         height: 500px;
+        position: relative;
 
         @media screen and (max-width: 768px) {
             height: auto;
+        }
+
+        .card-date{
+            background: #000000;
+            padding: 0px 8px!important;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            position: absolute;
+            margin: 20px 0 0 30px;
+            top: 20!important;
+            left: 30;
+
         }
 
         .card-body{

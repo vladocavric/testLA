@@ -10,8 +10,8 @@
     .our-services-vraper {
         border: 0;
         padding: 0;
+        display: flex;
 
-        // just cols
         > div {
 
             &:not(:last-child) {
@@ -22,9 +22,26 @@
                 padding-left: 0;
             }
 
-            // &:last-child {
+            &:last-child {
+                // border: 1px solid red;
+                .service{
+                    .service-vrap-single{
+                        // background: red;
+                        &:before{
+                            width: 0;
+                        }
+                    }
+                }
+            }
 
-            // }
+            @media screen and (max-width: 992px) {
+                margin: auto;
+                border-bottom: 1px solid $laca-gray;
+                padding: 0px;
+                
+              }
+
+          
         }
 
         .service {
@@ -55,6 +72,8 @@
                 padding: 0 60px;
                 position: relative;
 
+              
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -64,6 +83,9 @@
                     bottom: 0;
                     width: 1px;
                     background-color: $laca-gray;
+                    @media screen and (max-width: 992px) {
+                        width: 0;
+                      }
                 }
 
                 @media screen and (max-width: 992px) {
