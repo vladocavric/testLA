@@ -47,7 +47,7 @@
 
 .latest-news-container{
   
-    max-width: 1400px;
+    max-width: 1430px;
     margin: auto;
 }
 
@@ -64,18 +64,69 @@
                 z-index: -5;
                 color: white;
             
-                p{
+                p.slider-date{
                     z-index: 1000;
                     position: absolute;
-                    top: 50px;
-                    padding: 35px;
+                    bottom: 160px;
+                    left: 15px;
+                    padding: 0 35px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 33px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.35px;
             
+                }
+
+                p.slider-title{
+                    z-index: 1000;
+                    position: absolute;
+                    bottom: 70px;
+                    left: 15px;
+                    padding: 0 35px;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                .slider-footer{
+                    position: absolute;
+                    left: 15px;
+                    bottom: 30px;
+                    z-index: 1000;
+                    padding: 0 35px;
+
+                    .slider-footre-vrapper{
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        .read-more{
+                            color: $laca-orange;
+                           
+                        }
+
+                        .no-of-comments{
+                            position: absolute;
+                            right: -15px;
+                        }
+    
+                        img{
+                            display: inline-block;
+                            width: 25px!important;
+                            height: 25px;
+                            margin-left: 25px;
+                        }
+                    }
+
                 }
     
                 img {
                     width: 100%!important;
                     height: 100%;
                     object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    // margin: 15px;
                 }
             }
         }
@@ -86,10 +137,9 @@
 /* the slides */
 .slick-slide {
     margin: 0 20px;
-}
-/* the parent */
-.slick-list {
-    margin: 0 17px;
-}
+    padding: 0 25px;
+      }
+
+
 
 
