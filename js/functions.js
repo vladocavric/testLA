@@ -26,7 +26,7 @@ function slickInit() {
     })
 }
 
-$( ".slick-prev" ).append( "<p>Test</p>" );
+$( ".slick-prev" ).append( "<span>zebra</span>" );
 
 //******search field show/hide */
 $(".search-btn").click(function(){
