@@ -1,11 +1,13 @@
 .search-bar-input{
     width: 100%;
     border: 0;
-    box-shadow: 0px 5px 5px gray;
+    box-shadow: 0px 5px 5px $laca-purple;
     padding: 10px;
     font-size: 22px;
     position: fixed;
     margin-top: 0px;
     z-index: 10000000;
+    background: $laca-purple;
+    color: $laca-orange;
     
 }

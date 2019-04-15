@@ -8,9 +8,10 @@ function slickInit() {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        // variableWidth: true,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        nextArrow: '<i class="fas fa-chevron-right"></i>',
+        prevArrow: '<i class="fas fa-chevron-left"></i>',
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
             {
               breakpoint: 768,
@@ -25,8 +26,6 @@ function slickInit() {
        
     })
 }
-
-$( ".slick-prev" ).append( "<span>zebra</span>" );
 
 //******search field show/hide */
 $(".search-btn").click(function(){
