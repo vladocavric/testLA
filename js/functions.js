@@ -10,8 +10,8 @@ function slickInit() {
         slidesToScroll: 1,
         nextArrow: '<i class="fas fa-chevron-right"></i>',
         prevArrow: '<i class="fas fa-chevron-left"></i>',
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         responsive: [
             {
               breakpoint: 768,

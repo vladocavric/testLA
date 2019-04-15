@@ -45,7 +45,6 @@
                 height: 420px;
                 color: white;
                 
-
                 &:after {
                     content: '';
                     display: block;
@@ -101,7 +100,26 @@
                         .read-more{
                             color: $laca-orange;
                             margin-right: 15px;
+                            display: inline-block;
 
+                            &:after {
+                                position: relative;
+                                // bottom: 70px;
+                                content: "";
+                                display: inline-block;
+                                width: 0px;
+                                background: $laca-orange;
+                                height: 3px;
+                                opacity: 0;
+                                transition: opacity, width;
+                                transition-duration: .3s;
+                              }
+                              
+                            //   &:hover:after {
+                            //     opacity: 1;
+                            //     width: 100%;
+                            //   }
+                
                         }
 
                         .no-of-comments{
@@ -151,4 +169,24 @@
         width: 100%;
         max-width: none;
     }
+}
+
+
+//**************************treba nastaviti sutra nemam pojma zasto hover efecat ne radi
+
+// .read-more:after{
+//     position: relative;
+//     top: -30px;
+//     content: "";
+//     display: inline-block;
+//     width: 0px;
+//     background: #fff;
+//     height: 3px;
+//     opacity: 0;
+//     transition: opacity, width;
+//     transition-duration: .3s;
+// }
+.slick-item:hover a .read-more::after {
+    opacity: 1;
+    width: 100%;
 }
