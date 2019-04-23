@@ -21,7 +21,7 @@
     }
 
     .fa-chevron-left{
-        left: -30px;
+        left: -5px;
 
         @media screen and (max-width: 1400px) {
             left: 0;
@@ -29,7 +29,7 @@
     }
 
     .fa-chevron-right{
-        right: -30px;
+        right: -5px;
 
         @media screen and (max-width: 1400px) {
             right: 0;
@@ -95,7 +95,7 @@
                     bottom: 30px;
                     z-index: 1000;
                     padding: 0 0px;
-                    width: 90%;
+                    width: 80%;
                     @media screen and (max-width: 550px){
                         left: 15px;
                     }
@@ -165,7 +165,7 @@
 
 .slick-list {
 
-    margin: 0 -25px;
+    // margin: 0 -25px;
 }
 
 /* the slides */

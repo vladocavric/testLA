@@ -224,12 +224,12 @@
       .latest-news-container .fa-chevron-right, .latest-news-container .fa-chevron-left {
         background-color: rgba(245, 122, 48, 0.3); } }
   .latest-news-container .fa-chevron-left {
-    left: -30px; }
+    left: -5px; }
     @media screen and (max-width: 1400px) {
       .latest-news-container .fa-chevron-left {
         left: 0; } }
   .latest-news-container .fa-chevron-right {
-    right: -30px; }
+    right: -5px; }
     @media screen and (max-width: 1400px) {
       .latest-news-container .fa-chevron-right {
         right: 0; } }
@@ -277,7 +277,7 @@
     bottom: 30px;
     z-index: 1000;
     padding: 0 0px;
-    width: 90%; }
+    width: 80%; }
     @media screen and (max-width: 550px) {
       .slick-slide > div a .slider-item .slider-footer {
         left: 15px; } }
@@ -310,9 +310,6 @@
     object-fit: cover;
     position: absolute;
     top: 0; }
-
-.slick-list {
-  margin: 0 -25px; }
 
 /* the slides */
 .slick-slide {
@@ -865,10 +862,21 @@ footer {
     padding: 60px 0; }
 
 .orange-text a {
-  color: #f57a30; }
-
-.orange-text a:hover {
-  border-bottom: 1px solid #f57a30; }
+  color: #f57a30;
+  position: relative; }
+  .orange-text a:before, .orange-text a:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease; }
+  .orange-text a:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #f57a30;
+    transform: scaleX(0); }
+  .orange-text a:hover:before {
+    transform: scaleX(1); }
 
 .laca-info {
   font-size: 11px;
